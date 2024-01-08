@@ -106,9 +106,9 @@ function App() {
       <div className="hidden md:flex">
       
       </div>
-      <div className="bg-white bg-opacity-90 items-center  absolute bottom-10 w-[96vw] z-[1000]  left-[2vw]   p-4 rounded-lg shadow-md ">
+      <div className=" items-center  absolute bottom-10 w-[96vw] z-[1000]  left-[2vw]   p-4 rounded-lg  ">
         {modalShow && (
-          <div className="h-[200px] rounded-lg shadow-md w-[200px] transition-all 2s ease-in mb-4 relative items-center justify-center flex flex-col gap-4">
+          <div className="bg-white bg-opacity-90 h-[200px] rounded-lg shadow-md w-[200px] transition-all 2s ease-in mb-4 relative items-center justify-center flex flex-col gap-4">
             <p>Supply: 1b</p>
             <p>Airdrops: 20%</p>
             <p>Presale: 30% </p>
@@ -116,7 +116,7 @@ function App() {
             <p>Liquidity Pool (LP): 30% </p>
           </div>
         )}
-        <div className="bg-white  p-2 shadow-lg rounded-lg">
+        <div className="bg-white bg-opacity-90 p-2 shadow-lg rounded-lg">
           <div className="flex md:flex-row flex-col justify-between">
             <div className="flex md:flex-row flex-col gap-4">
             
