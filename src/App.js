@@ -81,7 +81,7 @@ function App() {
 
   return (
     <div className="App  ">
-      <div className="  items-center top-10 w-[96vw] absolute  left-[2vw] z-[1000]  bg-white p-4 rounded-lg shadow-md ">
+      <div className="  items-center top-10 w-[96vw] absolute  left-[2vw] z-[1000]  bg-white bg-opacity-90 p-4 rounded-lg shadow-md ">
         <div className="flex items-center justify-between">
           <img src={logo} className="w-20 absolute" alt="logo" />
           <p className="font-bold p-2   ">$dolf</p>
@@ -103,15 +103,12 @@ function App() {
           </div>
         </div>
       </div>
-      <a
-        href="https://app.hel.io/pay/659c73ea199fbe7c7c9c7020"
-        className=" top-[46vh] hover:text-white p-4  left-[44vw] z-[100] absolute  cursor-pointer rounded-lg bg-gradient-to-r from-orange-500 to-yellow-500 "
-      >
-        Buy Pre-sale
-      </a>
-      <div className=" items-center  absolute bottom-10 w-[96vw] z-[1000]  left-[2vw]   p-4 rounded-lg shadow-md ">
+      <div className="hidden md:flex">
+      
+      </div>
+      <div className="bg-white bg-opacity-90 items-center  absolute bottom-10 w-[96vw] z-[1000]  left-[2vw]   p-4 rounded-lg shadow-md ">
         {modalShow && (
-          <div className="bg-white h-[200px] rounded-lg shadow-md w-[200px] transition-all 2s ease-in mb-4 relative items-center justify-center flex flex-col gap-4">
+          <div className="h-[200px] rounded-lg shadow-md w-[200px] transition-all 2s ease-in mb-4 relative items-center justify-center flex flex-col gap-4">
             <p>Supply: 1b</p>
             <p>Airdrops: 20%</p>
             <p>Presale: 30% </p>
@@ -119,9 +116,10 @@ function App() {
             <p>Liquidity Pool (LP): 30% </p>
           </div>
         )}
-        <div className="bg-white p-2 shadow-lg rounded-lg">
-          <div className="flex justify-between">
-            <div className="flex gap-4">
+        <div className="bg-white  p-2 shadow-lg rounded-lg">
+          <div className="flex md:flex-row flex-col justify-between">
+            <div className="flex md:flex-row flex-col gap-4">
+            
               <button
                 onClick={() => setModalShow(!modalShow)}
                 className="font-bold  text-slate-600 hover:bg-orange-400 p-2 rounded-lg hover:text-white transition-all 2s"
@@ -146,31 +144,40 @@ function App() {
               >
                 Buy on ME
               </a>
+              <a
+                href="https://app.hel.io/pay/659c73ea199fbe7c7c9c7020"
+                className="  hover:text-white p-2  left-[44vw] z-[100]   cursor-pointer rounded-lg bg-gradient-to-r from-orange-500 to-yellow-500 "
+              >
+                Buy Pre-sale
+              </a>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col md:flex-row items-center justify-center mt-10 md:mt-0 gap-4 md:gap-0 ">
               <div className="flex items-center mr-10 text-gray-700">
                 CA: not created yet
               </div>
-              <button onClick={() => goBackward()}>
-                <FontAwesomeIcon
-                  className="text-[1.2rem]"
-                  icon={faStepBackward}
-                />
-              </button>
-              <button onClick={() => toggleMusic()}>
-                {isPlaying ? (
-                  <FontAwesomeIcon className="text-[1.2rem]" icon={faPause} />
-                ) : (
-                  <FontAwesomeIcon className="text-[1.2rem]" icon={faPlay} />
-                )}
-              </button>
-              <button onClick={() => goForward()}>
-                <FontAwesomeIcon
-                  className="text-[1.2rem]"
-                  icon={faStepForward}
-                />
-              </button>
+
+              <div className="flex  gap-4">
+                <button onClick={() => goBackward()}>
+                  <FontAwesomeIcon
+                    className="text-[1.2rem]"
+                    icon={faStepBackward}
+                  />
+                </button>
+                <button onClick={() => toggleMusic()}>
+                  {isPlaying ? (
+                    <FontAwesomeIcon className="text-[1.2rem]" icon={faPause} />
+                  ) : (
+                    <FontAwesomeIcon className="text-[1.2rem]" icon={faPlay} />
+                  )}
+                </button>
+                <button onClick={() => goForward()}>
+                  <FontAwesomeIcon
+                    className="text-[1.2rem]"
+                    icon={faStepForward}
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
