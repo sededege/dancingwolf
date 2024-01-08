@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+.gif-container {
+  margin-top: 20px;
+  
+}
+/* Agrega estos estilos a App.css */
+.animated-gif {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transition: opacity 1s;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+
+@keyframes zoomEffect {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.music-container {
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
