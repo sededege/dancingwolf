@@ -89,14 +89,14 @@ function App() {
             Welcome to $DOLF (Dancing Wolf){" "}
           </p>
           <div className="flex gap-4 items-center">
-            <a href="https://www.discord.gg/KxKAyntQFZ">
+            {/* <a href="https://www.discord.gg/KxKAyntQFZ">
               <FaDiscord className="text-[1.5rem] text-purple-500" />{" "}
-            </a>
-            <a href="https://www.discord.gg/KxKAyntQFZ">
+            </a> */}
+            <a href="https://t.me/dancingwolfsol">
               {" "}
               <FaTelegram className="text-[1.5rem] text-sky-400" />
             </a>
-            <a href="https://twitter.com/DyorWolfz">
+            <a href="https://twitter.com/dolfsolana">
               {" "}
               <FaXTwitter className="text-[1.5rem]" />{" "}
             </a>
@@ -120,36 +120,36 @@ function App() {
           <div className="flex md:flex-row flex-col justify-between">
             <div className="flex md:flex-row flex-col gap-4">
             
-              <button
+              {/* <button
                 onClick={() => setModalShow(!modalShow)}
                 className="font-bold  text-slate-600 hover:bg-orange-400 p-2 rounded-lg hover:text-white transition-all 2s"
               >
                 Tokenomics
-              </button>
+              </button> */}
               <button className="font-bold text-slate-600 hover:bg-orange-400 p-2 rounded-lg hover:text-white transition-all 2s">
                 Chart
               </button>
-              <button className="font-bold text-slate-600 hover:bg-orange-400 p-2 rounded-lg hover:text-white transition-all 2s">
+             {/*  <button className="font-bold text-slate-600 hover:bg-orange-400 p-2 rounded-lg hover:text-white transition-all 2s">
                 Buy now
-              </button>
+              </button> */}
               <a
-                href="https://www.tensor.trade/trade/dyor_wolfz"
-                className="font-bold text-white bg-slate-800 p-2 rounded-lg hover:text-white transition-all 2s"
+              /*   href="https://www.tensor.trade/trade/dyor_wolfz" */
+                className="font-bold text-white bg-green-400 p-2 rounded-lg hover:text-white transition-all 2s"
               >
-                Buy on Tensor
+                Buy on Pump
               </a>
-              <a
+             {/*  <a
                 href="https://www.tensor.trade/trade/dyor_wolfz"
                 className="font-bold text-white bg-pink-400 p-2 rounded-lg hover:text-white transition-all 2s"
               >
                 Buy on ME
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="https://app.hel.io/pay/659c73ea199fbe7c7c9c7020"
                 className="  hover:text-white p-2  left-[44vw] z-[100]   cursor-pointer rounded-lg bg-gradient-to-r from-orange-500 to-yellow-500 "
               >
                 Buy Pre-sale
-              </a>
+              </a> */}
             </div>
 
             <div className="flex flex-col md:flex-row items-center justify-center mt-10 md:mt-0 gap-4 md:gap-0 ">
